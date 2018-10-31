@@ -5,11 +5,11 @@ export function getGreeting() {
   let hour = date.getHours()
   let greeting = ''
   if (hour >= 0 && hour < 12) {
-  	greeting = 'good morning!'
+  	greeting = 'Good morning!'
   } else if (hour >= 12 && hour < 17) {
-  	greeting = 'good afternoon!'
+  	greeting = 'Good afternoon!'
   } else if (hour >= 17 && hour <= 23) {
-  	greeting = 'good evening!'
+  	greeting = 'Good evening!'
   }
   return greeting
 }

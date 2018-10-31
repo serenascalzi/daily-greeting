@@ -14,7 +14,8 @@ class Greet extends Component {
 	render() {
 		return (
 			<div>
-				<p>It is {this.state.weekday}, {this.state.month} {this.state.day}, {this.state.year} &mdash; {this.state.greeting}</p>
+				<h2>{this.state.greeting}</h2>
+				<h3>It is {this.state.weekday}, {this.state.month} {this.state.day}, {this.state.year}.</h3>
 			</div>
 		)
 	}
