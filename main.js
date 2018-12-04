@@ -6,13 +6,13 @@ $(document).ready(function() {
 	let greet = ''
 	if (hour >= 0 && hour < 12) {
 		image = '&#9728;'
-		greet = 'Good morning!'
+		greet = 'Good Morning!'
 	} else if (hour >= 12 && hour < 17) {
 		image = '&#9729;'
-		greet = 'Good afternoon!'
+		greet = 'Good Afternoon!'
 	} else if (hour >= 17 && hour <= 23) {
 		image = '&#9790;'
-		greet = 'Good evening!'
+		greet = 'Good Evening!'
 	}
 
 	let day = date.getDay()
@@ -65,6 +65,9 @@ $(document).ready(function() {
 
 	let year = date.getFullYear()
 
-	let greeting = `<h2>${image}</h2> <h3>${greet}</h3> <h4>It is ${dayOfWeek}, ${monthOfYear} ${dayOfMonth}, ${year}.</h4>`
+	let icon = `<h2>${image}</h2>`
+	$('#icon').html(icon)
+
+	let greeting = `<h3>${greet}</h3> <h4>It is ${dayOfWeek},</h4> <h4>${monthOfYear} ${dayOfMonth}, ${year}.</h4>`
 	$('#greeting').html(greeting)
 })
